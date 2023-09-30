@@ -1,0 +1,225 @@
+* {
+  font-family: "Cairo", sans-serif;
+  list-style: none;
+  scroll-behavior: smooth;
+  line-height: 1.3;
+  text-decoration: none;
+}
+body {
+  height: 300vh;
+}
+.continer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 40px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: block;
+}
+
+:root {
+  --min-color: #b620e1;
+  --transition: 0.3s;
+}
+
+.titals {
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: var(--min-color);
+  margin: 0;
+}
+header {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+  color: var(--min-color);
+}
+
+div.sidBer {
+  position: relative;
+  cursor: pointer;
+}
+
+div.sidBer i {
+  font-size: 30px;
+  color: var(--min-color);
+}
+
+div.landing {
+  position: relative;
+  overflow: hidden;
+}
+
+div.landing video {
+  display: block;
+  width: 100%;
+}
+
+div.landing div.tital {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+.landingTitel {
+  font-size: 60px;
+}
+
+div.landing div.tital p {
+  margin: 0;
+  font-size: 25px;
+}
+div.landing div.sercls {
+  bottom: -28px;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+main {
+  padding: 40px 0;
+}
+main div.continer div.how-we-are div.introdchon {
+  display: flex;
+}
+main div.continer div.how-we-are div.introdchon div p {
+  font-size: 25px;
+}
+main div.continer div.how-we-are div.introdchon img {
+  display: block;
+  width: 425px;
+}
+
+div.Reasons div {
+  display: block;
+  background-color: black;
+  width: 10px;
+  height: 30px;
+  position: absolute;
+}
+
+.whyUsStyle {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+div.whyUS h2 {
+  margin-bottom: 10px;
+}
+img.explinengImg {
+  display: block;
+  width: 350px;
+  background-color: transparent;
+}
+.info {
+  padding: 20px;
+  position: relative;
+  border-radius: 50px;
+}
+div.whyUS p {
+  margin: 0;
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+div.info.infoArowRight p {
+  direction: ltr;
+}
+div.revars {
+  direction: rtl;
+}
+
+.apirsAnimhon,
+.apirsAnimhonLeftToRhite,
+.apirsAnimhonRhitToleft {
+  animation-play-state: paused;
+  animation-duration: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  position: relative;
+  z-index: -1;
+}
+
+.apirsAnimhonLeftToRhite,
+.apirsAnimhonRhitToleft {
+  animation-delay: 0.3s;
+}
+
+.apirsAnimhon {
+  animation-name: apris;
+  top: 40px;
+}
+.apirsAnimhonLeftToRhite {
+  animation-name: apirsLeftToRhite;
+  left: -40px;
+}
+.apirsAnimhonRhitToleft {
+  animation-name: apirsAnimhonRhitToleft;
+  right: -40px;
+}
+
+div.cstmorsFidd {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+div.user {
+  cursor: pointer;
+  padding: 20px;
+}
+div.userImg img {
+  border-radius: 25px;
+  width: 100%;
+  height: 350px;
+  display: block;
+}
+
+div.user p {
+  font-size: 20px;
+}
+
+div.user p.redMore {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+div.user:hover p.redMore {
+  color: var(--min-color);
+}
+div.user p.redMore i {
+  margin-left: 5px;
+}
+/* @keyframes*/
+@keyframes apris {
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes apirsLeftToRhite {
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+@keyframes apirsAnimhonRhitToleft {
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}

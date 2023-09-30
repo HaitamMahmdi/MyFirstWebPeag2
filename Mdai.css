@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+  div.continer {
+    text-align: center;
+    padding: 15px;
+  }
+  div.introdchon {
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  main div.continer div.how-we-are div.introdchon img {
+    width: 300px !important;
+  }
+  img.explinengImg {
+    width: 300px !important;
+  }
+}
+/* Medium */
+@media (min-width: 600px) {
+}
+@media (max-width: 1024px) {
+  div.continer {
+    text-align: center;
+  }
+  div.introdchon {
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 20px;
+  }
+  .whyUsStyle {
+    grid-template-columns: 1fr !important;
+  }
+  img.explinengImg {
+    margin: 0 auto;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  div.continer {
+  }
+}
